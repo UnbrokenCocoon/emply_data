@@ -1,9 +1,10 @@
 -- 0) Ingest CSVs
 CREATE OR REPLACE TABLE industries_raw AS
-SELECT * FROM read_csv_auto('C:/Users/Thoma/Desktop/people employment.csv', header = true);
+-- set your location for /data
+SELECT * FROM read_csv_auto('data/people employment.csv', header = true);
 
 CREATE OR REPLACE TABLE totals_raw AS
-SELECT * FROM read_csv_auto('C:/Users/Thoma/Desktop/All Employment and Public Sector.csv', header = true);
+SELECT * FROM read_csv_auto('data/All Employment and Public Sector.csv', header = true);
 
 -- 1) Clean (force numerics, keep Dates)
 CREATE OR REPLACE VIEW industries_clean AS
