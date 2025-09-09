@@ -26,19 +26,7 @@ Overall, the shift reflects the UK’s transition from manufacturing and agricul
 
 ---
 
-## 🗂 Repository Contents
 
-- `data/` – Input files:
-  - `people employment.csv`
-  - `All Employment and Public Sector.csv`
-- `workflow.sql` – DuckDB SQL pipeline:
-  - Cleans and reshapes raw tables
-  - Normalises industries by total employment
-  - Computes start density (1997), end density (2025), and percentage-point changes
-- `Output/Density_change.png` – Visualisation of industry employment density change
-- `Density_Change_Visualiser.ipynb` – Notebook for plotting with Python/Matplotlib
-
----
 
 ## 🔧 Workflow
 
